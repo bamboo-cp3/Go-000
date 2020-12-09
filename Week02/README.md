@@ -18,6 +18,13 @@ func New(text string) error {
 
 Go panic 意味着 fatal error（就是挂了）。不能假设调用者来解决panic，意味着代码不能继续运行了
 
+### ERRORS VS EXCEPTION
+Go 的处理异常不是引入Exception，支持多参数返回，在函数签名中带上实现error 接口的对象，交由调用者处理
+* exception 存在的问题：
+~~~
+
+~~~
+
 ### Sentinel Error
 
 预定义的特定错误，叫sentinel error
